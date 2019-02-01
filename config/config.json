@@ -22,7 +22,7 @@
   "blacklist_assign" : "addr",
   "min_payment": 1.0,
   "keep": {
-    "reserve": 5.0
+    "reserve": 0.5
   },
   "pay_addresses": {
     "reserve": "QamG4XCJ4wTAo6pcMkHVcsq7Qn7EY5qrrj"
