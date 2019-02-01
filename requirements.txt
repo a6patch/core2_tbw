@@ -1,6 +1,7 @@
 wheel
 python-dotenv
 psycopg2
+psycopg2-binary
 flask
 flask-API
 arkecosystem-crypto
