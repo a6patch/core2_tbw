@@ -3,6 +3,7 @@
   "network": "network",
   "delegate_ip": "ip",
   "dbusername": "dbname",
+  "username": "osusernametbw",
   "publicKey": "publicKey",
   "interval": 211,
   "voter_share": 0.50,
