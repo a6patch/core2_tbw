@@ -414,7 +414,7 @@ if __name__ == '__main__':
     # get config data
     data, network = u.parse_configs()
 
-    dynamic = Dynamic(data['dbusername'], data['voter_msg'])
+    dynamic = Dynamic(data['username'], data['voter_msg'])
     dynamic.get_node_configs()
     transaction_fee = dynamic.get_dynamic_fee()
     
@@ -425,11 +425,11 @@ if __name__ == '__main__':
     
     # check to see if ark.db exists, if not initialize db, etc
     if os.path.exists(tbw_path / 'ark.db') is False:
-        snekdb = SnekDB(data['dbusername'])
+        snekdb = SnekDB(data['username'])
         initialize()
     
     # check for new rewards accounts to initialize if any changed
-    snekdb = SnekDB(data['dbusername'])
+    snekdb = SnekDB(data['username'])
     get_rewards()
 
     # set block count        
