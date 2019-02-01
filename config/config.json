@@ -1,9 +1,9 @@
 {
-  "start_block": 0,
-  "network": "network",
+  "start_block": 1700000,
+  "network": "qredit_mainnet",
   "delegate_ip": "ip",
-  "dbusername": "dbname",
-  "username": "osusernametbw",
+  "dbusername": "qredit",
+  "username": "d_",
   "publicKey": "publicKey",
   "interval": 211,
   "voter_share": 0.50,

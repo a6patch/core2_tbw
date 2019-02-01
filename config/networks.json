@@ -59,7 +59,7 @@
     "wif": 187,
     "port": 4103,
     "db": "qredit_mainnet",
-    "db_user": "null",
+    "db_user": "qredit",
     "db_pw": "password"
     },
     "ripa_devnet": {

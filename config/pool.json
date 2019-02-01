@@ -1,14 +1,14 @@
 {
-  "network": "",
-  "pool_ip": "xx.xx.xx.xx",
-  "explorer": "https://explorer.ark.io/",
+  "network": "qredit_mainnet",
+  "pool_ip": "54.202.72.220",
+  "explorer": "http://qredit.digitalwindmill.com/",
   "delegate": "delegate",
-  "coin": "ARK",
+  "coin": "XQR",
   "proposal": "https://xx.xx.xx/",
-  "dbusername": "dbname",
+  "dbusername": "qredit",
   "pubkey": "pubkey",
   "pool_port": 5000,
-  "custom_port": 5004,
+  "custom_port": 5064,
   "webhook_token": "secretToken",
   "pool_version": "original"
 }
