@@ -437,11 +437,11 @@ if __name__ == '__main__':
                   data['publicKey'])
 
     if os.path.exists(tbw_path / 'ark.db') is False:
-        snekdb = SnekDB(data['dbusername'])
+        snekdb = SnekDB(data['username'])
         initialize()
 
     # check for new rewards accounts to initialize if any changed
-    snekdb = SnekDB(data['dbusername'])
+    snekdb = SnekDB(data['username'])
     get_rewards()
 
     # set block count

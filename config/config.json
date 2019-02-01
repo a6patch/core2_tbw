@@ -1,29 +1,30 @@
 {
-  "start_block": 0,
-  "network": "network",
+  "start_block": 1700000,
+  "network": "qredit_mainnet",
   "delegate_ip": "ip",
-  "dbusername": "dbname",
-  "publicKey": "publicKey",
+  "dbusername": "qredit",
+  "username": "d_DELEGATE",
+  "publicKey": "PUBKEY",
   "interval": 211,
   "voter_share": 0.50,
-  "passphrase": "passphrase",
+  "passphrase": "PASSPHRASE",
   "secondphrase": "None",
-  "voter_msg": "Delegate X - True Block Weight",
+  "voter_msg": "Delegate DELEGATE - True Block Weight",
   "block_check": 30,
   "cover_tx_fees": "Y",
   "vote_cap" : 0,
   "vote_min" : 0,
-  "fixed": {"addr1":0, "addr2":0},
+  "fixed": {},
   "whitelist" : "N",
   "whitelist_addr" : ["addr"],
   "blacklist": "block",
   "blacklist_addr" : ["addr"],
   "blacklist_assign" : "addr",
-  "min_payment": 0.5,
+  "min_payment": 1.0,
   "keep": {
-    "reserve": 0.50
+    "reserve": 5.0
   },
   "pay_addresses": {
-    "reserve": "addr1"
+    "reserve": "QamG4XCJ4wTAo6pcMkHVcsq7Qn7EY5qrrj"
   }
 }

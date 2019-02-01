@@ -24,7 +24,7 @@ def index():
             s['forging'] = 'Standby'
 
     # s['votes'] = dstats['data']['votes']
-    snekdb = SnekDB(data['dbusername'])
+    snekdb = SnekDB(data['username'])
     voter_data = snekdb.voters().fetchall()
     voter_count = client.delegates.voter_balances(data['delegate'])
     s['votes'] = len(voter_count['data'])
@@ -37,7 +37,7 @@ def index():
 
 @app.route('/payments')
 def payments():
-    snekdb = SnekDB(data['dbusername'])
+    snekdb = SnekDB(data['username'])
     data_out = snekdb.transactions().fetchall()
     tx_data = []
     for i in data_out:
@@ -62,7 +62,7 @@ def webhook():
                  hook_data['data']['totalFee'], hook_data['data']['height']]]
 
         # store block to get allocated by tbw
-        snekdb = SnekDB(data['dbusername'])
+        snekdb = SnekDB(data['username'])
         snekdb.storeBlocks(block)
         return "OK"
 

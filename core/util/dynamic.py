@@ -18,8 +18,8 @@ class Dynamic:
         
         
         #plugin_file = '/home/' + self.username + '/.ark/config/plugins.js'
-        lines = [line.rstrip('\n') for line in open(plugin_file)]
-        self.plugins = lines
+        #lines = [line.rstrip('\n') for line in open(plugin_file)]
+        #self.plugins = lines
 
     
     def parser(self, line):
@@ -54,7 +54,10 @@ class Dynamic:
     
     def get_dynamic_fee(self):
         
-        enabled, fee_multiplier, dynamic_offset = self.scan_file(self.plugins)
+        #enabled, fee_multiplier, dynamic_offset = self.scan_file(self.plugins)
+        enabled = "true"
+        fee_multiplier = 3000
+        dynamic_offset = 100
         if enabled is "false":
             transaction_fee = int(.1 * atomic)
         else:

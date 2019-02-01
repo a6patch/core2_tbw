@@ -42,6 +42,7 @@ def build_network():
 
 
 def build_transfer_transaction(address, amount, vendor, fee, pp, sp):
+    print("___", address, amount, vendor, fee, pp, sp, "___");
     transaction = Transfer(
         recipientId=address,
         amount=amount,
@@ -125,7 +126,7 @@ if __name__ == '__main__':
    
     u = Util()
     data, network = u.parse_configs()
-    snekdb = SnekDB(data['dbusername'])
+    snekdb = SnekDB(data['username'])
     client = u.get_client()
     build_network()
     
